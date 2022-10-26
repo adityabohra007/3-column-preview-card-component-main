@@ -1,0 +1,79 @@
+$bright-orange: hsl(31, 77%, 52%)
+$dark-cyan: hsl(184, 100%, 22%)
+$very-dark-cyan: hsl(179, 100%, 13%)
+$transparent-white: hsla(0, 0%, 100%, 0.75) //para
+$very-light-gray: hsl(0, 0%, 95%) //background, headings, buttons
+$big-shoulder: 'Big Shoulders Display', cursive
+$lexend: 'Lexend Deca', sans-serif
+
+
+html,body
+    height: 100%
+
+body
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+.Container
+    display: flex
+    max-width: 700px
+    
+
+section
+    // max-width: 200px
+    padding: 30px 20px
+
+section h1
+    font-family: $big-shoulder
+    font-size: 34px
+    text-transform: uppercase
+    color: $very-light-gray
+section p
+    font-family: $lexend
+    color: $transparent-white
+
+
+section.Sedan
+    background: $bright-orange
+
+section.SUV
+    background: $dark-cyan
+
+section.Luxury
+    background-color: $very-dark-cyan
+
+button
+    padding: 10px 15px
+    border-radius: 15px
+    border: 1px solid white
+    margin-top: 40px
+    margin-bottom: 20px
+
+section.Sedan button
+    color: $bright-orange
+    &:hover
+        background: $bright-orange
+        color: white
+
+section.SUV button
+    color: $dark-cyan
+    &:hover
+        background: $dark-cyan
+        color: white
+
+section.Luxury button
+    color: $very-dark-cyan
+    &:hover
+        background: $very-dark-cyan
+        color: white
+
+
+@media screen and (max-width:640px) 
+    body
+        align-items: unset
+        margin: 20px
+    .Container
+        flex-direction: column
+        max-width: 300px
+    

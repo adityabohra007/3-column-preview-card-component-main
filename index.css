@@ -1,0 +1,70 @@
+html, body {
+  height: 100%; }
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.Container {
+  display: flex;
+  max-width: 700px; }
+
+section {
+  padding: 30px 20px; }
+
+section h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #f2f2f2; }
+
+section p {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75); }
+
+section.Sedan {
+  background: #e38826; }
+
+section.SUV {
+  background: #006970; }
+
+section.Luxury {
+  background-color: #004241; }
+
+button {
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 1px solid white;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
+section.Sedan button {
+  color: #e38826; }
+  section.Sedan button:hover {
+    background: #e38826;
+    color: white; }
+
+section.SUV button {
+  color: #006970; }
+  section.SUV button:hover {
+    background: #006970;
+    color: white; }
+
+section.Luxury button {
+  color: #004241; }
+  section.Luxury button:hover {
+    background: #004241;
+    color: white; }
+
+@media screen and (max-width: 640px) {
+  body {
+    align-items: unset;
+    margin: 20px; }
+
+  .Container {
+    flex-direction: column;
+    max-width: 300px; } }
+
+/*# sourceMappingURL=index.css.map */
